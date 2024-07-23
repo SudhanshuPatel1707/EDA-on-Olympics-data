@@ -133,10 +133,10 @@ if user_menu == 'Athlete wise Analysis':
     x3 = athlete_df[athlete_df['Medal'] == 'Silver']['Age'].dropna()
     x4 = athlete_df[athlete_df['Medal'] == 'Bronze']['Age'].dropna()
 
-    fig = sns.distplot([x1, x2, x3, x4], ['Overall Age', 'Gold Medalist', 'Silver Medalist', 'Bronze Medalist'],show_hist=False, show_rug=False)
-    fig.update_layout(autosize=False,width=1000,height=600)
-    st.title("Distribution of Age")
-    st.plotly_chart(fig)
+    # fig = sns.distplot([x1, x2, x3, x4], ['Overall Age', 'Gold Medalist', 'Silver Medalist', 'Bronze Medalist'],show_hist=False, show_rug=False)
+    # fig.update_layout(autosize=False,width=1000,height=600)
+    # st.title("Distribution of Age")
+    # st.plotly_chart(fig)
 
     x = []
     name = []
@@ -154,10 +154,10 @@ if user_menu == 'Athlete wise Analysis':
         x.append(temp_df[temp_df['Medal'] == 'Gold']['Age'].dropna())
         name.append(sport)
 
-    fig = ff.create_distplot(x, name, show_hist=False, show_rug=False)
-    fig.update_layout(autosize=False, width=1000, height=600)
-    st.title("Distribution of Age wrt Sports(Gold Medalist)")
-    st.plotly_chart(fig)
+    # fig = ff.create_distplot(x, name, show_hist=False, show_rug=False)
+    # fig.update_layout(autosize=False, width=1000, height=600)
+    # st.title("Distribution of Age wrt Sports(Gold Medalist)")
+    # st.plotly_chart(fig)
 
     sport_list = df['Sport'].unique().tolist()
     sport_list.sort()

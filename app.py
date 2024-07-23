@@ -136,7 +136,7 @@ if user_menu == 'Athlete wise Analysis':
     fig = ff.create_distplot([x1, x2, x3, x4], ['Overall Age', 'Gold Medalist', 'Silver Medalist', 'Bronze Medalist'],show_hist=False, show_rug=False)
     fig.update_layout(autosize=False,width=1000,height=600)
     st.title("Distribution of Age")
-    st.plotly_chart(fig)
+    st.plotly_chart(fig,use_container_width=True)
 
     x = []
     name = []

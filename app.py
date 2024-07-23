@@ -5,8 +5,8 @@ import helper
 import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
-import scipy
-import plotly.figure_factory as ff
+# import scipy
+# import plotly.figure_factory as ff
 from plotly.figure_factory import create_distplot
 
 df = pd.read_csv('athlete_events.csv')

@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import scipy
 import plotly.figure_factory as ff
+from plotly.figure_factory import create_distplot
 
 df = pd.read_csv('athlete_events.csv')
 region_df = pd.read_csv('noc_regions.csv')

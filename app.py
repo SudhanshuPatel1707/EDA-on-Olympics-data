@@ -22,7 +22,7 @@ user_menu = st.sidebar.radio(
 )
 
 if user_menu == 'Medal Tally':
-    st.sidebar.header("Medal Tally")
+    st.sidebar.header("Medal Tall")
     years,country = helper.country_year_list(df)
 
     selected_year = st.sidebar.selectbox("Select Year",years)
